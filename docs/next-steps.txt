@@ -1,1 +1,32 @@
+import java.util.Scanner;
 
+public class Hello {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+        
+        System.out.println("Hello " + name + "!");
+        
+        System.out.print("How is your day going so far? ");
+        String dayResponse = scanner.nextLine();
+        
+        System.out.println("okay.");
+
+        System.out.print("What is your favorite color? ");
+        String favoriteColor = scanner.nextLine();
+        
+       
+        System.out.println(favoriteColor + " is a ugly color!");
+
+        System.out.print("How old are you? ");
+        int age = scanner.nextInt();
+        scanner.nextLine(); 
+
+        System.out.println("Cool. " + age + " years old.");
+
+        scanner.close();
+    }
+}
